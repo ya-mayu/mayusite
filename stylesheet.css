@@ -1,0 +1,565 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body{
+  margin: 0;
+}
+header{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+}
+.responsive-nav-list{
+  display: none;
+}
+.header-top{
+  height: 10px;
+  background-color: #fe6340;
+}
+.myname{
+  display: none;
+}
+.header-box{
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  }
+.home{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: solid 1px black;
+  line-height: 30px;
+  margin: 0 25px 0 30px;
+  text-align: center;
+  font-family: 'Andale Mono','Consolas','AppleColorEmoji',sans-serif;
+  cursor: pointer;
+}
+.menu_button{
+  display: none;
+}
+nav{
+  display: none;
+}
+.nav-list{
+  display: inline-block;
+  width: 455px;
+}
+.icon-box{
+  float: right;
+  width: 140px;
+}
+.icon-box a{
+  text-decoration: none;
+}
+.icon-box2{
+  display: none;
+}
+.fab{
+  font-size: 35px;
+  color: #696969;
+}
+.fa-twitter{
+  margin: 13px 30px;
+}
+.nav-item{
+  display: inline-block;
+  color: black;
+  line-height: 60px;
+  padding: 0 25px 0 25px;
+  font-family: 'Andale Mono','Consolas','AppleColorEmoji',sans-serif;
+}
+.nav-item-list{
+  text-decoration: none;
+  color: black;
+}
+.responsive-mv{
+  display: none;
+}
+.main-visual{
+  width: 100%;
+  height: 712px;
+}
+.main-visual-title{
+  width: 50%;
+  height: 712px;
+  float: left;
+}
+.mv-title-wrap{
+  width: 35%;
+  margin: 350px auto 0;
+}
+h1{
+  font-family: 'Andale Mono','Franklin Gothic Medium','Futura',sans-serif;
+}
+.mv-border{
+  width: 315px;
+  height: 3px;
+  background-color: black;
+  margin: 10px auto 0;
+}
+/*ハンバーガーメニュー*/
+#navToggle {
+    display:none; /*通常時は非表示にしておきます*/
+    position:absolute; /*bodyに対しての絶対位置指定です*/
+    right:13px;
+    top:7px;
+    width:30px;
+    height:25px;
+    cursor:pointer}
+#navToggle div {position:relative} /*spanの絶対位置指定の親にします*/
+#navToggle span {
+    display:block;
+    position:absolute; /*#navToggle div に対して*/
+    width:100%;
+    border-bottom:solid 3px #999;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out}
+#navToggle span:nth-child(1) {top:0}
+#navToggle span:nth-child(2) {top:11px}
+#navToggle span:nth-child(3) {top:22px}
+/*ハンバーガーメニューEND*/
+
+/*
+.main-visuai-img{
+  height: 712px;
+  width: 50%;
+  float: right;
+  background-image: url(img/scott-webb-199470-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+*/
+
+/*スライドショー*/
+#slide {
+  width:720px;
+  height:712px;
+  margin:0 auto;
+  position:relative;
+  float: right;
+}
+#slide img {
+  position:absolute;
+  left:0;
+  top:0;
+}
+
+.portfolio{
+  width: 100%;
+  height: 375px;
+}
+.title-wrap{
+  width: 147px;
+  margin: 0 auto;
+}
+.title-border{
+  width: 157px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: #fe6340;
+}
+.title-wrap2{
+  width: 80px;
+  margin: 0 auto;
+}
+.title-border2{
+  width: 92px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: #fe6340;
+}
+.title-wrap3{
+  width: 113px;
+  margin: 0 auto;
+}
+.title-border3{
+  width: 127px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: #fe6340;
+}
+h2{
+  padding-top: 65px;
+  font-size: 1.7em;
+  font-family: 'Andale Mono','Consolas','AppleColorEmoji',sans-serif;
+}
+.img-box{
+  width: 980px;
+  height: 210px;
+  margin: 65px auto;
+}
+.imgWrap{
+  overflow: hidden;
+  width: 300px;
+  height: 210px;
+  float: left;
+  border: solid 1px gray;
+  margin: 0 13px 0;
+}
+.imgWrap img {
+  transition-duration: 0.3s;
+}
+.imgWrap img:hover {
+  transform: scale(1.1);  /*画像の拡大率*/
+  transition-duration: 0.3s;  /*変化に掛かる時間*/
+}
+.portfolio-img{
+  width: 300px;
+  height: 210px;
+}
+.img-text{
+  color: white;
+  padding: 95px 0 0 82px;
+}
+img.bg-1{
+  /*background-image: url(img/wals.jpg);
+  background-size: cover;
+  background-position: center;*/
+  border: solid 0.1px gray;
+}
+img.bg-2{
+  /*background-image: url(img/bg-2.jpg);
+  background-size: cover;
+  background-position: center;*/
+  border: solid 0.1px gray;
+}
+.bg-3{
+  background-color: gray;
+}
+.about-text-box{
+  width: 463px;
+  text-align: center;
+  margin: 65px auto;
+  font-size: 13px;
+}
+.about-wrap{
+  width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+}
+.about-img{
+  width: 160px;
+  height: 160px;
+  background-image: url(img/annie-spratt-79272-unsplash.jpeg);
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin: 0 30px 0 190px;
+}
+.about-img:hover{
+  width: 160px;
+  height: 160px;
+  background-image: url(img/IMG_3820.JPG);
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin: 0 30px 0 190px;
+}
+.about-text-box2{
+  width: 500px;
+  height: 200px;
+  float: right;
+  margin-top: 30px;
+  font-size: 13px;
+}
+.contact{
+  width: 100%;
+  padding-bottom: 55px;
+}
+.contact-box{
+  width: 330px;
+  margin: 65px auto;
+}
+.tell{
+  margin: 30px 0;
+}
+footer{
+  width: 100%;
+  height: 60px;
+  background-color: #bc9e7b;
+}
+.footer-list{
+  display: none;
+}
+.top-icon{
+  display: none;
+}
+
+
+/*レスポンジブ*/
+@media screen and (max-width:768px){
+
+/*ヘッダー*/
+  header{
+    height: auto;
+    position: fixed;
+  }
+  .header-box{
+    height: auto;
+  }
+  .nav-box{
+    width: 100%;
+    display: inline-block;
+  }
+  .main-visual-title2{
+    width: 230px;
+    float: left;
+  }
+  .mv-title-wrap2{
+    width: 188px;
+    line-height: 52px;
+    margin-left: 5%;
+  }
+  .mv-border2{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-top: 51px;
+  }
+  .myname{
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Andale Mono','Franklin Gothic Medium','Futura',sans-serif;
+  }
+  .menu_button{
+    display: block;
+    float: right;
+    margin: 13px 15px;
+    border: 1px solid gray;
+    padding: 0 5px;
+  }
+  /*ハンバーガーメニュー*/
+  #navToggle{
+    display: block;
+  }
+  .main-visual-title2, nav{
+    display:table-cell
+  }
+  nav{
+    display: none;
+    width: 45%;
+    background-color: pink;
+    position: absolute;
+    top: 39px;
+    right: 0;
+  }
+  /*ハンバーガーメニューend*/
+
+  .nav-box{
+    position: relative;
+    height: 47px;
+  }
+  .responsive-nav-list{
+    display: block;
+    width: 50%;
+    float: right;
+    background-color: white;
+    /*border-top: 1px solid #d9d9d9;*/
+  }
+  .nav-item-list2{
+    text-decoration: none;
+    color: black;
+  }
+  .home2{
+    width: 50%;
+    /*border-right: 1px solid #d9d9d9;*/
+  }
+  .about2{
+    width: 50%;
+    /*border-right: 1px solid #d9d9d9;*/
+  }
+  .menu-bottom{
+    border-bottom: 1px solid gray;
+  }
+  .nav-item2{
+    display: none;
+    list-style: none;
+    font-family: 'Andale Mono','Consolas','AppleColorEmoji',sans-serif;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    border-top: 1px solid gray;
+    text-align: center;
+    /*width: 50%;
+    padding: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: center;
+    float: left;*/
+  }
+  .home2 a{
+    text-decoration: none;
+    color: black;
+  }
+  .nav-list{
+    display: none;
+  }
+  .nav-item{
+    display: block;
+  }
+  .icon-box{
+    display: none;
+  }
+  .icon-box2{
+    display: inline-block;
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 32px auto 0;
+  }
+  .icon-box2 a{
+  text-decoration: none;
+  }
+  .fa-instagram{
+    margin: 30px 30px 0 30px;
+  }
+  .fa-twitter{
+    margin: 30px 30px 0 30px;
+  }
+  .main-visual{
+    display: none;
+  }
+
+/*メインビジュアル*/
+  .responsive-mv{
+    display: block;
+    width: 100%;
+    height: 430px;
+    background-image: url(img/scott-webb-199470-unsplash.jpg);
+    background-size: cover;
+    background-position:center;
+  }
+
+/*ポートフォリオ*/
+  .portfolio{
+    height: 900px;
+  }
+  .img-box{
+    width:100%;
+    height: auto;
+  }
+  .imgWrap{
+    float: none;
+    margin: 0 auto;
+  }
+  .imgWrap:nth-child(2){
+    margin: 40px auto 40px;
+  }
+  .portfolio-img{
+    margin: 0 auto;
+    float:none;
+  }
+/*アバウト*/
+  .about{
+    margin: 0 5% 40px;
+    height: auto;
+  }
+  .about-wrap{
+    width: 100%;
+    height: auto;
+  }
+  .about-text-box{
+    width: 100%;
+    margin: 65px auto 30px;
+    text-align: center;
+  }
+  .about-img{
+    float:none;
+    margin: 0 auto;
+  }
+  .about-text{
+    font-size: 0.8em;
+    width: 100%;
+    height: auto;
+  }
+  .about-text-box2{
+    float: none;
+    width: 100%;
+    height: auto;
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  /*コンタクト*/
+  .contact{
+    padding-bottom: 0;
+  }
+  .contact-box{
+    width: auto;
+    margin: 65px 5% 30px;
+  }
+  .mail{
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .tell{
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .top-icon{
+    display: block;
+    width: 32px;
+    height: 50px;
+    margin: 50px auto 20px;
+  }
+  .fa-angle-up{
+    display: block;
+    font-size: 50px;
+    color: #696969;
+  }
+
+
+/*フッター*/
+.footer-list{
+  display: block;
+  height: 60px;
+  width: 309px;
+  margin: 0 auto;
+}
+.footer-item{
+  display: inline-block;
+  color: black;
+  font-size: 12px;
+  line-height: 60px;
+  padding: 0 15px;
+  font-family: 'Andale Mono','Consolas','AppleColorEmoji',sans-serif;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
